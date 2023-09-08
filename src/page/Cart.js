@@ -45,7 +45,7 @@ const Cart = () => {
       toast("Przekieruj do bramki płatności...!");
       stripePromise.redirectToCheckout({ sessionId: data });
     } else {
-      toast("Nie masz loginu!");
+      toast("Zaloguj się!");
       setTimeout(() => {
         navigate("/login");
       }, 1000);
